@@ -1,0 +1,4 @@
+build
+coverage
+**/*.d.ts
+node_modules

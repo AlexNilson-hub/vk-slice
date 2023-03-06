@@ -1,0 +1,82 @@
+.wishContainer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.helpText {
+    position: absolute;
+    top: 200px;
+    width: 310px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.wishTextContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 322px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    top: 56%;
+    transform: translateY(-50%);
+}
+
+.wishText {
+    font-family: 'Alegreya', sans-serif;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.shortWishText {
+    font-size: 16px;
+}
+.longWishText {
+    font-size: 14px;
+}
+
+.wishWhiteText {
+    color: #fff;
+}
+
+.wishBlackText {
+    color: #333;
+}
+
+.wishAuthor {
+    font-family: 'Alegreya', sans-serif;
+    color: #000;
+    /*font-size: 16px;*/
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonStyle {
+    font-family: 'Alegreya', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    bottom: 120px;
+    background-color: #fff;
+    border: 2px solid #7A88F7;
+    padding: 4px 0px;
+    border-radius: 6px;
+}

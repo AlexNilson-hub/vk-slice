@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd4c5b55-55a4-4557-8621-a436248f6cad" name="Changes" comment="feat: add post on wall functional">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="cookies" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GymOwv6LphjERSde59oLximGQI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="app.teamhub.trackedBranches" value="-mk04b4/master" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\Alex Nilson\WebstormProjects\vk_bag\tass-miniapp-vk\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/common/consts" />
+      <recent name="$PROJECT_DIR$/src/common/types" />
+      <recent name="$PROJECT_DIR$/src/common/helper" />
+      <recent name="$PROJECT_DIR$/src/components/ChooseBackground" />
+      <recent name="$PROJECT_DIR$/src/api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/pages/RegistrationPage/VerifyEmail" />
+      <recent name="$PROJECT_DIR$/src/pages/RegistrationPage/RegistrationBodygraph" />
+      <recent name="$PROJECT_DIR$/src/components/icons/OnboardingPage/CircleZodiacIcon" />
+      <recent name="$PROJECT_DIR$/src/components/bodyGraph/BodyGraphNumbers/BodyGraphNumbersContainer" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd4c5b55-55a4-4557-8621-a436248f6cad" name="Changes" comment="" />
+      <created>1667369169736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667369169736</updated>
+      <workItem from="1667369171142" duration="501000" />
+      <workItem from="1667369682246" duration="28566000" />
+      <workItem from="1667539370950" duration="46436000" />
+      <workItem from="1667973690721" duration="10823000" />
+      <workItem from="1668012241982" duration="18741000" />
+      <workItem from="1668143811433" duration="3316000" />
+      <workItem from="1668149295529" duration="7489000" />
+      <workItem from="1668244292190" duration="937000" />
+      <workItem from="1668499946866" duration="884000" />
+      <workItem from="1668579383012" duration="584000" />
+      <workItem from="1668580362294" duration="855000" />
+      <workItem from="1668582022280" duration="31126000" />
+      <workItem from="1668696265428" duration="5209000" />
+      <workItem from="1668759309785" duration="5926000" />
+      <workItem from="1668843464818" duration="15067000" />
+      <workItem from="1669027683010" duration="53000" />
+      <workItem from="1669027761521" duration="8868000" />
+      <workItem from="1669052557407" duration="5874000" />
+      <workItem from="1669093138641" duration="1235000" />
+      <workItem from="1669099831866" duration="816000" />
+      <workItem from="1669101365100" duration="10932000" />
+      <workItem from="1669180763493" duration="2423000" />
+      <workItem from="1669187579729" duration="11701000" />
+      <workItem from="1669267321151" duration="17085000" />
+      <workItem from="1669353412869" duration="23319000" />
+      <workItem from="1669630035124" duration="109000" />
+      <workItem from="1669630148268" duration="29316000" />
+      <workItem from="1669873444843" duration="15762000" />
+      <workItem from="1669968475408" duration="3785000" />
+      <workItem from="1669980793197" duration="24352000" />
+      <workItem from="1670314973712" duration="8714000" />
+      <workItem from="1670393904067" duration="4142000" />
+      <workItem from="1670400214221" duration="104000" />
+      <workItem from="1670400436066" duration="5473000" />
+      <workItem from="1670409179567" duration="4901000" />
+      <workItem from="1670417632253" duration="5608000" />
+      <workItem from="1670479552383" duration="69578000" />
+      <workItem from="1670908634034" duration="14338000" />
+      <workItem from="1670997403060" duration="13342000" />
+      <workItem from="1671082051257" duration="310000" />
+      <workItem from="1671086007996" duration="1201000" />
+      <workItem from="1671514277838" duration="283000" />
+      <workItem from="1671516787710" duration="106000" />
+      <workItem from="1671517218438" duration="163000" />
+      <workItem from="1671523125288" duration="402000" />
+      <workItem from="1671523758503" duration="178000" />
+      <workItem from="1672038241986" duration="997000" />
+      <workItem from="1672039532114" duration="2944000" />
+      <workItem from="1672047700618" duration="667000" />
+      <workItem from="1672048527182" duration="35138000" />
+      <workItem from="1672292852878" duration="1051000" />
+      <workItem from="1672294242156" duration="2042000" />
+      <workItem from="1672297237550" duration="610000" />
+      <workItem from="1672297903137" duration="19175000" />
+      <workItem from="1673013496301" duration="46000" />
+      <workItem from="1673242615306" duration="196000" />
+      <workItem from="1673246558148" duration="553000" />
+      <workItem from="1673256128139" duration="602000" />
+      <workItem from="1673263181299" duration="2835000" />
+      <workItem from="1673326716077" duration="31000" />
+      <workItem from="1673347685382" duration="401000" />
+      <workItem from="1673414594783" duration="7330000" />
+      <workItem from="1673432612991" duration="4357000" />
+      <workItem from="1673460453229" duration="4814000" />
+      <workItem from="1673467337329" duration="723000" />
+      <workItem from="1673501265268" duration="4952000" />
+      <workItem from="1673518825241" duration="75000" />
+      <workItem from="1673589235571" duration="5103000" />
+      <workItem from="1673609163907" duration="687000" />
+      <workItem from="1673869381876" duration="2455000" />
+      <workItem from="1673941214381" duration="12499000" />
+      <workItem from="1674208489366" duration="316000" />
+      <workItem from="1677560540715" duration="8926000" />
+      <workItem from="1677647498882" duration="5098000" />
+      <workItem from="1678112300568" duration="2043000" />
+    </task>
+    <task id="LOCAL-00001" summary="init repository">
+      <created>1667369380976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667369380976</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: create bodyGraph">
+      <created>1669100700148</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669100700148</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: create registration context">
+      <created>1669187851562</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669187851562</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: сorrect display of bodigraph data">
+      <created>1670314001392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670314001392</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: create context for bodyGraph, registration, create loader">
+      <created>1670411771795</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670411771795</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add cookie functionality">
+      <created>1670664388694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670664388694</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add login functionality, backend requests">
+      <created>1670849590272</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670849590273</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: fix bug related to presence of cookies">
+      <created>1670850259729</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670850259729</updated>
+    </task>
+    <task id="LOCAL-00009" summary="init">
+      <created>1672393277394</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672393277394</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: add post on wall functional">
+      <created>1673972630107</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673972630107</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init repository" />
+    <MESSAGE value="feat: create bodyGraph" />
+    <MESSAGE value="feat: create registration context" />
+    <MESSAGE value="feat: сorrect display of bodigraph data" />
+    <MESSAGE value="feat: create context for bodyGraph, registration, create loader" />
+    <MESSAGE value="feat: add cookie functionality" />
+    <MESSAGE value="feat: add login functionality, backend requests" />
+    <MESSAGE value="fix: fix bug related to presence of cookies" />
+    <MESSAGE value="init" />
+    <MESSAGE value="feat: add post on wall functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add post on wall functional" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
