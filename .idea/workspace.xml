@@ -7,6 +7,7 @@
     <list default="true" id="cd4c5b55-55a4-4557-8621-a436248f6cad" name="Changes" comment="feat: add post on wall functional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/helper/postPublication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/helper/postPublication.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChooseBackground/ChooseBackground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChooseBackground/ChooseBackground.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +178,7 @@
       <workItem from="1677647498882" duration="5098000" />
       <workItem from="1678112300568" duration="2043000" />
       <workItem from="1678117161155" duration="8529000" />
-      <workItem from="1678125945660" duration="337000" />
+      <workItem from="1678125945660" duration="1948000" />
     </task>
     <task id="LOCAL-00001" summary="init repository">
       <created>1667369380976</created>

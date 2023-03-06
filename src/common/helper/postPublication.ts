@@ -1,21 +1,28 @@
-import bridge from '@vkontakte/vk-bridge'
 import instance from '../../api/instance'
 import { ISendImgResponse, IToken } from '../types/postPublication.types'
+import bridge from '@vkontakte/vk-bridge'
 
 export const getToken = () => {
   try {
     // eslint-disable-next-line no-debugger
     debugger
-    return bridge.send('VKWebAppGetAuthToken', {
-      app_id: 51513371,
-      scope: 'stories,wall,photos',
-    })
+    bridge
+      .send('VKWebAppGetAuthToken', {
+        app_id: 51513371,
+        scope: 'stories,wall,photos',
+      })
+      .then((res) => {
+        return res
+      })
+      .catch((e) => {
+        console.log(e)
+      })
   } catch (err) {
     console.log(err)
   }
 }
 
-export const getUploadUrl = (token: IToken) => {
+export const getUploadUrl = (token: any) => {
   try {
     // eslint-disable-next-line no-debugger
     debugger
@@ -41,7 +48,7 @@ export const sendImg = (data: Blob | FormData) => {
   }
 }
 
-export const savePhoto = (token: IToken, uploadImg: ISendImgResponse) => {
+export const savePhoto = (token: any, uploadImg: ISendImgResponse) => {
   // eslint-disable-next-line no-debugger
   debugger
   try {

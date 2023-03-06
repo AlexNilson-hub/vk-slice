@@ -75,7 +75,7 @@ export const ChooseBackground = () => {
       // await formData.append('photo', image1)
       await formData.append('photo', image1)
 
-      const token = (await getToken()) as IToken
+      const token = await getToken()
       console.log(token, 'token')
       const uploadUrl = (await getUploadUrl(token)) as IGetUploadUrlResponse
       console.log(uploadUrl, 'uploadUrl')
