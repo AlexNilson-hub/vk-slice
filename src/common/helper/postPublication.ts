@@ -4,6 +4,8 @@ import { ISendImgResponse, IToken } from '../types/postPublication.types'
 
 export const getToken = () => {
   try {
+    // eslint-disable-next-line no-debugger
+    debugger
     return bridge.send('VKWebAppGetAuthToken', {
       app_id: 51513371,
       scope: 'stories,wall,photos',
