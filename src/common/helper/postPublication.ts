@@ -15,6 +15,8 @@ export const getToken = () => {
 
 export const getUploadUrl = (token: IToken) => {
   try {
+    // eslint-disable-next-line no-debugger
+    debugger
     return bridge.send('VKWebAppCallAPIMethod', {
       method: 'photos.getWallUploadServer',
       params: { access_token: token.access_token, v: '5.131' },
@@ -25,6 +27,8 @@ export const getUploadUrl = (token: IToken) => {
 }
 
 export const sendImg = (data: Blob | FormData) => {
+  // eslint-disable-next-line no-debugger
+  debugger
   try {
     return instance.post(
       'https://tass-miniapp-vk.linestest.com/tass-miniapp.php',
@@ -36,6 +40,8 @@ export const sendImg = (data: Blob | FormData) => {
 }
 
 export const savePhoto = (token: IToken, uploadImg: ISendImgResponse) => {
+  // eslint-disable-next-line no-debugger
+  debugger
   try {
     return bridge.send('VKWebAppCallAPIMethod', {
       method: 'photos.saveWallPhoto',
@@ -55,7 +61,8 @@ export const savePhoto = (token: IToken, uploadImg: ISendImgResponse) => {
 
 export const postOnWall = (savePhotoResponse: any) => {
   const attachments = `photo${savePhotoResponse?.response[0].owner_id}_${savePhotoResponse.response[0].id}`
-
+  // eslint-disable-next-line no-debugger
+  debugger
   try {
     return bridge.send('VKWebAppShowWallPostBox', {
       message: 'Hello!',
@@ -67,6 +74,8 @@ export const postOnWall = (savePhotoResponse: any) => {
 }
 
 export const dataURLtoFile = (dataUrl: any, fileName: string) => {
+  // eslint-disable-next-line no-debugger
+  debugger
   const arr = dataUrl.split(',')
   const mime = arr[0].match(/:(.*?);/)[1]
   const bstr = atob(arr[1])

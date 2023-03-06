@@ -33,10 +33,6 @@ import {
   postOnWallImg,
 } from '../../common/img/index'
 
-import eruda from 'eruda'
-
-// eruda.init()
-
 export const ChooseBackground = () => {
   const [imageNumber, setImageNumber] = useState(0)
   const { selectedWish } = useGetWishContext()
@@ -58,38 +54,49 @@ export const ChooseBackground = () => {
     ? 'wishWhiteText'
     : 'wishBlackText'
 
-  const htmlImage = () => {
+  const htmlImage = async () => {
     const node = document.getElementById('postcard') as HTMLElement
     console.log(node, 'node')
-    htmlToImage
-      .toPng(node)
-      .then((res) => console.log(res.slice(0, 100), 'htmlImageResponse'))
-
-    return htmlToImage.toPng(node)
+    try {
+      const response = await htmlToImage.toPng(node)
+      return response.slice(0, 100)
+    } catch (e) {
+      console.log(e)
+    }
   }
 
   const postPublication = async (data: any) => {
-    const postcard = await dataURLtoFile(data, 'postcard.png')
-    console.log(postcard, 'postcard')
-    const formData = await new FormData()
-    await formData.append('photo', image1)
+    try {
+      // eslint-disable-next-line no-debugger
+      debugger
+      const postcard = await dataURLtoFile(data, 'postcard.png')
+      console.log(postcard, 'postcard')
+      const formData = await new FormData()
+      // await formData.append('photo', image1)
+      await formData.append('photo', image1)
 
-    const token = (await getToken()) as IToken
-    console.log(token, 'token')
-    const uploadUrl = (await getUploadUrl(token)) as IGetUploadUrlResponse
-    console.log(uploadUrl, 'uploadUrl')
-    await formData.append('url', uploadUrl.response.upload_url)
+      const token = (await getToken()) as IToken
+      console.log(token, 'token')
+      const uploadUrl = (await getUploadUrl(token)) as IGetUploadUrlResponse
+      console.log(uploadUrl, 'uploadUrl')
+      await formData.append('url', uploadUrl.response.upload_url)
 
-    const sendImgResponse = (await sendImg(formData)) as ISendImgResponse
-    console.log(sendImgResponse, 'sendImgResponse')
+      const sendImgResponse = (await sendImg(formData)) as ISendImgResponse
+      console.log(sendImgResponse, 'sendImgResponse')
 
-    if (sendImgResponse?.data) {
-      const savePhotoResponse = await savePhoto(token, sendImgResponse)
-      console.log(savePhotoResponse, 'savePhotoResponse')
-      if (savePhotoResponse?.response) {
-        await postOnWall(savePhotoResponse)
-        console.log(postOnWall, 'postOnWall')
+      if (sendImgResponse?.data) {
+        // eslint-disable-next-line no-debugger
+        debugger
+        const savePhotoResponse = await savePhoto(token, sendImgResponse)
+        console.log(savePhotoResponse, 'savePhotoResponse')
+        if (savePhotoResponse?.response) {
+          await postOnWall(savePhotoResponse)
+          console.log(postOnWall, 'postOnWall')
+        }
       }
+      alert('the story publication successfully posted')
+    } catch (e) {
+      console.log(e)
     }
   }
 
@@ -117,6 +124,20 @@ export const ChooseBackground = () => {
     trackMouse: true,
   })
 
+  const postStoriesHandler = async () => {
+    const response = await htmlImage()
+    if (response) {
+      await postStories(response)
+    }
+  }
+
+  const postPublicationHandler = async () => {
+    const response = await htmlImage()
+    if (response) {
+      await postPublication(response)
+    }
+  }
+
   return (
     <>
       <p className="swipeTitle">Свайпай и выбирай фон</p>
@@ -139,14 +160,14 @@ export const ChooseBackground = () => {
         <img
           src={postOnStoryImg}
           alt="postOnStoryImg"
-          onClick={() => postStories(htmlImage())}
+          onClick={postStoriesHandler}
           className="chooseBackgroundButton"
         />
 
         <img
           src={postOnWallImg}
           alt="postOnWallImg"
-          onClick={() => postPublication(htmlImage())}
+          onClick={postPublicationHandler}
           className="chooseBackgroundButton"
         />
       </div>
