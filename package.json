@@ -32,7 +32,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --fix --ext .ts,.tsx -c ./.eslintrc ./src",
-    "deploy": "vk-miniapps-deploy"
+    "deploy": "npm run deploy",
+    "tunnel": "vk-tunnel --insecure=1 --http-protocol=https --ws-protocol=wss --host=localhost --port=3000"
   },
   "eslintConfig": {
     "extends": [

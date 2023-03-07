@@ -50,4 +50,5 @@
 .chooseBackgroundButton {
     z-index: 2;
     width: 140px;
+    cursor: pointer;
 }

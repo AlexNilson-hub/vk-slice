@@ -20,6 +20,7 @@ import {
 } from '../../common/types/postPublication.types'
 import {
   image1,
+  image10,
   image2,
   image3,
   image4,
@@ -28,7 +29,6 @@ import {
   image7,
   image8,
   image9,
-  image10,
   postOnStoryImg,
   postOnWallImg,
 } from '../../common/img/index'
@@ -67,15 +67,13 @@ export const ChooseBackground = () => {
 
   const postPublication = async (data: any) => {
     try {
-      // eslint-disable-next-line no-debugger
-      debugger
       const postcard = await dataURLtoFile(data, 'postcard.png')
       console.log(postcard, 'postcard')
       const formData = await new FormData()
       // await formData.append('photo', image1)
       await formData.append('photo', image1)
 
-      const token = await getToken()
+      const token = (await getToken()) as IToken
       console.log(token, 'token')
       const uploadUrl = (await getUploadUrl(token)) as IGetUploadUrlResponse
       console.log(uploadUrl, 'uploadUrl')
@@ -85,8 +83,6 @@ export const ChooseBackground = () => {
       console.log(sendImgResponse, 'sendImgResponse')
 
       if (sendImgResponse?.data) {
-        // eslint-disable-next-line no-debugger
-        debugger
         const savePhotoResponse = await savePhoto(token, sendImgResponse)
         console.log(savePhotoResponse, 'savePhotoResponse')
         if (savePhotoResponse?.response) {

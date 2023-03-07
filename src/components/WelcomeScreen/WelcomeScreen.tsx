@@ -6,8 +6,12 @@ import bridge from '@vkontakte/vk-bridge'
 export const WelcomeScreen = ({ onClickNextButton }: IWelcomeScreenProps) => {
   const backgroundButtonImg = require('../../common/img/BackgroundButton.png')
 
+  const vkWebAppInitAsync = async () => {
+    await bridge.send('VKWebAppInit')
+  }
+
   useEffect(() => {
-    void bridge.send('VKWebAppInit')
+    vkWebAppInitAsync()
   }, [])
 
   return (

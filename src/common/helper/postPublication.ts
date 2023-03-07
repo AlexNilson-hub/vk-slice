@@ -1,32 +1,23 @@
+import bridge from '@vkontakte/vk-bridge'
 import instance from '../../api/instance'
 import { ISendImgResponse, IToken } from '../types/postPublication.types'
-import bridge from '@vkontakte/vk-bridge'
 
-export const getToken = () => {
+export const getToken = async () => {
   try {
     // eslint-disable-next-line no-debugger
     debugger
-    bridge
-      .send('VKWebAppGetAuthToken', {
-        app_id: 51513371,
-        scope: 'stories,wall,photos',
-      })
-      .then((res) => {
-        return res
-      })
-      .catch((e) => {
-        console.log(e)
-      })
+    return await bridge.send('VKWebAppGetAuthToken', {
+      app_id: 51513371,
+      scope: 'stories,wall,photos',
+    })
   } catch (err) {
     console.log(err)
   }
 }
 
-export const getUploadUrl = (token: any) => {
+export const getUploadUrl = async (token: IToken) => {
   try {
-    // eslint-disable-next-line no-debugger
-    debugger
-    return bridge.send('VKWebAppCallAPIMethod', {
+    return await bridge.send('VKWebAppCallAPIMethod', {
       method: 'photos.getWallUploadServer',
       params: { access_token: token.access_token, v: '5.131' },
     })
@@ -35,9 +26,7 @@ export const getUploadUrl = (token: any) => {
   }
 }
 
-export const sendImg = (data: Blob | FormData) => {
-  // eslint-disable-next-line no-debugger
-  debugger
+export const sendImg = async (data: Blob | FormData) => {
   try {
     return instance.post(
       'https://tass-miniapp-vk.linestest.com/tass-miniapp.php',
@@ -48,11 +37,9 @@ export const sendImg = (data: Blob | FormData) => {
   }
 }
 
-export const savePhoto = (token: any, uploadImg: ISendImgResponse) => {
-  // eslint-disable-next-line no-debugger
-  debugger
+export const savePhoto = async (token: IToken, uploadImg: ISendImgResponse) => {
   try {
-    return bridge.send('VKWebAppCallAPIMethod', {
+    return await bridge.send('VKWebAppCallAPIMethod', {
       method: 'photos.saveWallPhoto',
       params: {
         access_token: token.access_token,
@@ -68,12 +55,10 @@ export const savePhoto = (token: any, uploadImg: ISendImgResponse) => {
   }
 }
 
-export const postOnWall = (savePhotoResponse: any) => {
+export const postOnWall = async (savePhotoResponse: any) => {
   const attachments = `photo${savePhotoResponse?.response[0].owner_id}_${savePhotoResponse.response[0].id}`
-  // eslint-disable-next-line no-debugger
-  debugger
   try {
-    return bridge.send('VKWebAppShowWallPostBox', {
+    return await bridge.send('VKWebAppShowWallPostBox', {
       message: 'Hello!',
       attachments,
     })
@@ -83,8 +68,6 @@ export const postOnWall = (savePhotoResponse: any) => {
 }
 
 export const dataURLtoFile = (dataUrl: any, fileName: string) => {
-  // eslint-disable-next-line no-debugger
-  debugger
   const arr = dataUrl.split(',')
   const mime = arr[0].match(/:(.*?);/)[1]
   const bstr = atob(arr[1])

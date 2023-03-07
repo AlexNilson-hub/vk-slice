@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4c5b55-55a4-4557-8621-a436248f6cad" name="Changes" comment="feat: add post on wall functional">
+    <list default="true" id="cd4c5b55-55a4-4557-8621-a436248f6cad" name="Changes" comment="added async/await for postPublication.ts methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/helper/postPublication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/helper/postPublication.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ChooseBackground/ChooseBackground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChooseBackground/ChooseBackground.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChooseBackground/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChooseBackground/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomeScreen/WelcomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomeScreen/WelcomeScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vk-hosting-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/vk-hosting-config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="cookies" />
+        <entry key="$PROJECT_DIR$" value="edc98d64381aa9397528678a6bd4d6a0b8cc5e3c" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Front-end/testProjects/vk-slice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\Front-end\\testProjects\\vk-slice\\node_modules\\prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Front-end\\testProjects\\vk-slice\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Front-end/testProjects/vk-slice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\Front-end\\testProjects\\vk-slice\\node_modules\\prettier",
+    "ts.external.directory.path": "D:\\Front-end\\testProjects\\vk-slice\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/common/consts" />
@@ -77,7 +82,17 @@
       <recent name="$PROJECT_DIR$/src/components/bodyGraph/BodyGraphNumbers/BodyGraphNumbersContainer" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -88,9 +103,32 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="tunnel" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="tunnel" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.tunnel" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +217,8 @@
       <workItem from="1678112300568" duration="2043000" />
       <workItem from="1678117161155" duration="8529000" />
       <workItem from="1678125945660" duration="1948000" />
+      <workItem from="1678167493115" duration="17000" />
+      <workItem from="1678181458652" duration="2504000" />
     </task>
     <task id="LOCAL-00001" summary="init repository">
       <created>1667369380976</created>
@@ -279,7 +319,9 @@
     <MESSAGE value="fix: fix bug related to presence of cookies" />
     <MESSAGE value="init" />
     <MESSAGE value="feat: add post on wall functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add post on wall functional" />
+    <MESSAGE value="changed getToken function" />
+    <MESSAGE value="added async/await for postPublication.ts methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added async/await for postPublication.ts methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
