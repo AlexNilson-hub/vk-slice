@@ -13,7 +13,7 @@
     "@vkontakte/icons": "^2.3.0",
     "@vkontakte/vk-bridge": "^2.7.2",
     "@vkontakte/vkui": "^5.0.2",
-    "axios": "^1.2.1",
+    "axios": "^1.6.3",
     "base64-arraybuffer": "^1.0.2",
     "eruda": "^2.11.2",
     "html-to-image": "^1.11.3",
